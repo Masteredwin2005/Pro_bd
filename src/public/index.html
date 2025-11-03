@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <img class="Logo1" src="Logo1.png" alt="Logo1">
+    <div class="logo">
+      <h1 class="Nombre1">Veterinaria</h1>
+      <h2 class="Nombre2">Larimar</h2>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Sobre Nosotros</a></li>
+      <li><a href="#">Galería</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h2>Formulario de Mascotas</h2>
+
+    <form id="mascotaForm" class="form">
+      <input type="text" id="nombre" placeholder="Nombre de la mascota" required>
+      <input type="text" id="especie" placeholder="Especie" required>
+      <input type="number" id="edad" placeholder="Edad" required>
+      <input type="text" id="propietario" placeholder="Nombre del propietario" required>
+      <input type="text" id="telefono" placeholder="Teléfono de contacto" required>
+      <button type="submit">Enviar</button>
+    </form>
+
+    <h3>Mascotas Registradas</h3>
+    <ul id="listaMascotas"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
